@@ -33,6 +33,7 @@ class User
 
     public function __construct()
     {
+        $this->created_at = new \DateTimeImmutable();
         $this->pdfs = new ArrayCollection();
     }
 
