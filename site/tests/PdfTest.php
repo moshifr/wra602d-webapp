@@ -20,10 +20,10 @@ class PdfTest extends TestCase
 
         $pdf
             ->setTitle($title)
-        ->setOwner($user)
+            ->setOwner($user)
         ;
 
         $this->assertEquals($title, $pdf->getTitle());
-        $this->assertEquals($lastname, $pdf->getOwner()->getLastname());
+        $this->assertEquals($lastname, $pdf->getOwner()->getLastname(), "Get owner lastname");
     }
 }
